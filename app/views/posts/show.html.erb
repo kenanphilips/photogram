@@ -3,13 +3,14 @@
     <div class="post">
       <div class="post-head">
         <div class="name">
-          Kenan Philips
+          <div class="post-profile-img"></div>
+          <span>kenanphilips</span>
         </div>
       </div>
       <div class="image center-block">
         <%= image_tag @post.image.url(:medium) %>
       </div>
-      <p class="caption"><%= @post.caption %></p>
+      <p class="caption"><span>kenanphilips</span> <%= @post.caption %></p>
       <div class="text-center edit-links">
         <%= link_to "Edit", edit_post_path(@post) %>
         |

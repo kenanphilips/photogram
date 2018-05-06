@@ -16,11 +16,8 @@
 
 body {
   background-color: #fafafa;
-  font-family: "Proxima Nova", 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-
-nav {
-  margin-bottom: 40px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  margin-top: 137px;
 }
 
 .navbar-brand {
@@ -29,12 +26,13 @@ nav {
   }
 }
 
-.navbar-default {
+.navbar {
   background-color: #fff;
-  height: 54px;
+  height: 77px;
+  border-bottom: 1px solid rgba(0,0,0,.0975);
 
   .navbar-nav li a {
-    color: #125688;
+    color: #003569;
   }
 }
 
@@ -52,24 +50,38 @@ nav {
 
 .post {
   background-color: #fff;
-  border-color: #edeeee;
-  border-style: solid;
   border-radius: 3px;
-  border-width: 1px;
   margin-bottom: 60px;
+  border: 1px solid #e6e6e6;
 }
 
 .post-head {
   height: 64px;
   padding: 14px 20px;
-  color: #125688;
+  color: #262626;
   font-size: 15px;
   line-height: 18px;
-
-  .thumbnail {}
+  border-bottom: 0.5px solid #efefef;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
 
   .name {
-    display: block;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      margin-left: 12px;
+    }
+  }
+
+  .post-profile-img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #262626;
+    border-radius: 50px;
   }
 }
 
@@ -77,6 +89,13 @@ nav {
   padding: 24px 24px;
   font-size: 15px;
   line-height: 18px;
+
+  span {
+    color: #262626;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+  }
 }
 
 .form-wrapper {
